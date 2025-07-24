@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:Live Kamila Cruz
+DESCRIPTION:Joias com descontos exclusivos, peças em prata e outras surpresas!
+DTSTART:20250731T220000Z
+DTEND:20250731T230000Z
+LOCATION:https://instagram.com/kamilacruz.joias
+END:VEVENT
+END:VCALENDAR

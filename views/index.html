@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Adicionar ao Calendário</title>
+</head>
+<body>
+  <script>
+    function isIOS() {
+      return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    function adicionarEvento() {
+      if (isIOS()) {
+        window.location.href = "webcal://" + window.location.host + "/event.ics";
+      } else {
+        window.open("https://www.google.com/calendar/render?action=TEMPLATE&text=LIVE%20Kamila%20Cruz&dates=20250731T220000Z%2F20250731T230000Z&details=Joias%20com%20descontos%20exclusivos%2C%20pe%C3%A7as%20em%20prata%20e%20outras%20surpresas!%20Ao%20vivo%20no%20Instagram%20da%20%40kamilacruz.joias&location=Instagram%20%40kamilacruz.joias&sf=true&output=xml");
+      }
+    }
+
+    adicionarEvento()
+    window.close();
+  </script>
+</body>
+</html>
